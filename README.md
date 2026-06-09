@@ -1,3 +1,8 @@
+
+> # Esse projeto faz parte do módulo de **FUNDAMENTO EM REACT FRONT-END** da pós-graduação **UNIPDS JAVA IA** 
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
