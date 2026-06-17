@@ -1,13 +1,11 @@
-import { Hobbies } from "@/components/Hobbies";
-import { MeuNome } from "@/components/MeuNome";
+import Link from "next/link";
 
 const Page = () => {
   return (
-    <div> 
-      <MeuNome name="Rayller" age={32} birthDate={new Date(1994, 4, 11)}/> 
-      <Hobbies />
+    <div>
+      <Link className="underline" href="/nivel-0/Rayller">Minha página</Link>
     </div>
-  );      
+  )
 }
 
 export default Page;
