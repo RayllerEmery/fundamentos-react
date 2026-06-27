@@ -13,11 +13,13 @@ export const ContadorGlobal = () => {
             <h2 className="text-2xl font-bold">Contador:</h2>
             <p>Número atual: {contador}</p>
             <div className="flex gap-x-2">
-                <Button onClick={() => setContador(contador + 1)}>+1</Button>
-                <Button onClick={() => setContador(contador - 1)}>-1</Button>
-                <Button onClick={() => setContador(0)}>Zerar</Button>
-                <Button onClick={() => setContador(contador + 3)}>+3</Button>
-                <Button onClick={() => setContador(contador - 3)}>-3</Button>
+                <Button onClick={() => {
+                    setContador((c) => (c ?? 0) + 1)
+                }}>+1</Button>
+                <Button onClick={() => setContador((c) => (c ?? 0) - 1)}>-1</Button>
+                <Button onClick={() => setContador(() => 0)}>Zerar</Button>
+                <Button onClick={() => setContador((c) => (c ?? 0) + 3)}>+3</Button>
+                <Button onClick={() => setContador((c) => (c ?? 0) - 3)}>-3</Button>
             </div>
         </div>
     )
